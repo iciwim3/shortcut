@@ -31,8 +31,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -40,6 +38,33 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Mountains</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Mountains</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Love the mountains</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Ocean</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Ocean</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>I love that wet-wet!</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Space</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Space</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>You like space movies?!</string>
+		</dict>
 	</array>
 </dict>
 </plist>
