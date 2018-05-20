@@ -46,8 +46,6 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).mountains</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Mountains</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Love the mountains</string>
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>MountainShort</string>
 		</dict>
@@ -56,8 +54,6 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).ocean</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Ocean</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>I love that wet-wet!</string>
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>OceanShort</string>
 		</dict>
@@ -66,8 +62,6 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).space</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Space</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>You like space movies?!</string>
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>SpaceShort</string>
 		</dict>

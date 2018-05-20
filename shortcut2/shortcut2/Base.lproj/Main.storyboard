@@ -13,7 +13,7 @@
         <!--Mountains-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MountainVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mountainsVC" id="BYZ-38-t0r" customClass="MountainVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,17 +46,22 @@
         <!--OceanVC-->
         <scene sceneID="qZM-ES-rz3">
             <objects>
-                <viewController id="YRe-lX-poo" customClass="OceanVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="oceanVC" id="YRe-lX-poo" customClass="OceanVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LwS-GR-6TZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ocean" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-QC-Syq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ocean" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-QC-Syq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lgo-QC-Syq" firstAttribute="leading" secondItem="oIS-7U-nC4" secondAttribute="leading" id="3cT-yB-PRk"/>
+                            <constraint firstItem="lgo-QC-Syq" firstAttribute="top" secondItem="oIS-7U-nC4" secondAttribute="top" id="42H-mp-nBY"/>
+                            <constraint firstItem="lgo-QC-Syq" firstAttribute="trailing" secondItem="oIS-7U-nC4" secondAttribute="trailing" id="M6t-ZE-KWU"/>
+                            <constraint firstItem="lgo-QC-Syq" firstAttribute="bottom" secondItem="oIS-7U-nC4" secondAttribute="bottom" id="nIx-fc-34D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oIS-7U-nC4"/>
                     </view>
                     <navigationItem key="navigationItem" id="0M0-lx-9Qf">
@@ -74,7 +79,7 @@
         <!--SpaceVC-->
         <scene sceneID="bl1-hy-C88">
             <objects>
-                <viewController id="xbe-lp-BKn" customClass="SpaceVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="spaceVC" id="xbe-lp-BKn" customClass="SpaceVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xNm-8B-11G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

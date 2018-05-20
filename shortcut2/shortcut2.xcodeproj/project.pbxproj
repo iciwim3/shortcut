@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430006B820B117A7009BD57D /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430006B720B117A7009BD57D /* Identifiers.swift */; };
 		4325259320AFD1BD00CB923A /* OceanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4325259220AFD1BD00CB923A /* OceanVC.swift */; };
 		4325259520AFD1D100CB923A /* SpaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4325259420AFD1D100CB923A /* SpaceVC.swift */; };
 		4362501720AD25C800B841FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362501620AD25C800B841FA /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430006B720B117A7009BD57D /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		4325259220AFD1BD00CB923A /* OceanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanVC.swift; sourceTree = "<group>"; };
 		4325259420AFD1D100CB923A /* SpaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceVC.swift; sourceTree = "<group>"; };
 		4362501320AD25C800B841FA /* shortcut2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shortcut2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 				4362501820AD25C800B841FA /* MountainVC.swift */,
 				4325259420AFD1D100CB923A /* SpaceVC.swift */,
 				4325259220AFD1BD00CB923A /* OceanVC.swift */,
+				430006B720B117A7009BD57D /* Identifiers.swift */,
 				4362501A20AD25C800B841FA /* Main.storyboard */,
 				4362501D20AD25CB00B841FA /* Assets.xcassets */,
 				4362501F20AD25CB00B841FA /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				4325259320AFD1BD00CB923A /* OceanVC.swift in Sources */,
 				4325259520AFD1D100CB923A /* SpaceVC.swift in Sources */,
 				4362501920AD25C800B841FA /* MountainVC.swift in Sources */,
+				430006B820B117A7009BD57D /* Identifiers.swift in Sources */,
 				4362501720AD25C800B841FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
