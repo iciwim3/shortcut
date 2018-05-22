@@ -15,6 +15,7 @@
 		4362501C20AD25C800B841FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4362501A20AD25C800B841FA /* Main.storyboard */; };
 		4362501E20AD25CB00B841FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4362501D20AD25CB00B841FA /* Assets.xcassets */; };
 		4362502120AD25CB00B841FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4362501F20AD25CB00B841FA /* LaunchScreen.storyboard */; };
+		437501F020B3B57A00D07616 /* FlameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437501EF20B3B57A00D07616 /* FlameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4362501D20AD25CB00B841FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4362502020AD25CB00B841FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4362502220AD25CB00B841FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437501EF20B3B57A00D07616 /* FlameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				4362501820AD25C800B841FA /* MountainVC.swift */,
 				4325259420AFD1D100CB923A /* SpaceVC.swift */,
 				4325259220AFD1BD00CB923A /* OceanVC.swift */,
+				437501EF20B3B57A00D07616 /* FlameVC.swift */,
 				430006B720B117A7009BD57D /* Identifiers.swift */,
 				4362501A20AD25C800B841FA /* Main.storyboard */,
 				4362501D20AD25CB00B841FA /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				4325259520AFD1D100CB923A /* SpaceVC.swift in Sources */,
 				4362501920AD25C800B841FA /* MountainVC.swift in Sources */,
 				430006B820B117A7009BD57D /* Identifiers.swift in Sources */,
+				437501F020B3B57A00D07616 /* FlameVC.swift in Sources */,
 				4362501720AD25C800B841FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

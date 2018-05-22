@@ -70,6 +70,33 @@
             </objects>
             <point key="canvasLocation" x="2848.8000000000002" y="76.911544227886068"/>
         </scene>
+        <!--Flame-->
+        <scene sceneID="0Yk-eG-eZm">
+            <objects>
+                <viewController id="1L1-TT-9Kb" customClass="FlameVC" customModule="shortcut2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PIf-Va-EdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flame" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-bI-6cM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eqk-bI-6cM" firstAttribute="trailing" secondItem="DIE-1y-VBV" secondAttribute="trailing" id="8R7-ru-FFH"/>
+                            <constraint firstItem="eqk-bI-6cM" firstAttribute="leading" secondItem="DIE-1y-VBV" secondAttribute="leading" id="Kho-Ds-JZ0"/>
+                            <constraint firstItem="eqk-bI-6cM" firstAttribute="top" secondItem="PIf-Va-EdO" secondAttribute="top" id="eJJ-9v-ccs"/>
+                            <constraint firstItem="eqk-bI-6cM" firstAttribute="bottom" secondItem="DIE-1y-VBV" secondAttribute="bottom" id="mRm-pD-WOq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DIE-1y-VBV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Flame" image="FlameShort" selectedImage="FlameShort" id="uig-Ta-mCE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agv-Y3-buB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3525.5999999999999" y="258.62068965517244"/>
+        </scene>
         <!--Space-->
         <scene sceneID="bl1-hy-C88">
             <objects>
@@ -110,14 +137,17 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YTs-eM-jqS"/>
                         <segue destination="YRe-lX-poo" kind="relationship" relationship="viewControllers" id="gSI-xG-1ap"/>
                         <segue destination="xbe-lp-BKn" kind="relationship" relationship="viewControllers" id="Cu3-fK-Qib"/>
+                        <segue destination="1L1-TT-9Kb" kind="relationship" relationship="viewControllers" id="ZHS-9S-eiL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PoG-oK-xoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863" y="-305"/>
+            <point key="canvasLocation" x="1878" y="-296"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Flame" width="375" height="667"/>
+        <image name="FlameShort" width="33" height="35"/>
         <image name="MountainShort" width="35" height="35"/>
         <image name="Mountains" width="375" height="667"/>
         <image name="Ocean" width="375" height="667"/>

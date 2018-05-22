@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let oceanShortcut = UIMutableApplicationShortcutItem(type: "\(String(describing: Bundle.main.bundleIdentifier)).ocean", localizedTitle: "Ocean", localizedSubtitle: nil, icon: UIApplicationShortcutIcon.init(templateImageName: "OceanShort"), userInfo: nil)
         
-        application.shortcutItems = [oceanShortcut]
+        let flameShortcut = UIMutableApplicationShortcutItem(type: "\(String(describing: Bundle.main.bundleIdentifier)).flame", localizedTitle: "Flame", localizedSubtitle: nil, icon: UIApplicationShortcutIcon.init(templateImageName: "FlameShort"), userInfo: nil)
+        
+        application.shortcutItems = [oceanShortcut, flameShortcut]
         
         return true
     }
@@ -26,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case mountains = "mountains"
         case ocean = "ocean"
         case space = "space"
+        case flame = "flame"
     }
 
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
@@ -40,6 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 completionHandler(true)
             case ShortcutType.space.rawValue:
                 navVC.selectedIndex = 2
+                completionHandler(true)
+            case ShortcutType.flame.rawValue:
+                navVC.selectedIndex = 3
                 completionHandler(true)
                 
             default:
