@@ -12,17 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var vcsArray = [UIViewController]()
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mountainVC = storyboard.instantiateViewController(withIdentifier: MOUNTAINS_VC) as! MountainVC
-        let oceanVC = storyboard.instantiateViewController(withIdentifier: OCEAN_VC) as! OceanVC
-        let spaceVC = storyboard.instantiateViewController(withIdentifier: SPACE_VC) as! SpaceVC
+        let oceanShortcut = UIMutableApplicationShortcutItem(type: "\(String(describing: Bundle.main.bundleIdentifier)).ocean", localizedTitle: "Ocean", localizedSubtitle: nil, icon: UIApplicationShortcutIcon.init(templateImageName: "OceanShort"), userInfo: nil)
         
-        vcsArray = [mountainVC, oceanVC, spaceVC]
+        application.shortcutItems = [oceanShortcut]
         
         return true
     }
@@ -37,19 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let type = shortcutItem.type.components(separatedBy: ".").last {
             
-            let navVC = window?.rootViewController as! UINavigationController
-            navVC.setViewControllers(vcsArray, animated: false)
+            let navVC = window?.rootViewController as! UITabBarController
             
             switch type {
             case ShortcutType.ocean.rawValue:
-                navVC.popToViewController(vcsArray[1], animated: true)
+                navVC.selectedIndex = 1
                 completionHandler(true)
             case ShortcutType.space.rawValue:
-                navVC.popToViewController(vcsArray[2], animated: true)
+                navVC.selectedIndex = 2
                 completionHandler(true)
                 
             default:
-                navVC.popToRootViewController(animated: true)
+                navVC.selectedIndex = 0
                 completionHandler(true)
             }
             
